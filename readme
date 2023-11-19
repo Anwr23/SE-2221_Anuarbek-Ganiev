@@ -1,2 +1,17 @@
+Group:
 SE-2221
+
+Author:
 Ganiev Anuarbek
+
+Description:
+This repository is a project for the SDP final exam. This code is written in Java, provides an example video creation and notification application using six design patterns (Singleton, Factory Method, Observer, Strategy, Abstract Factory, Builder) to control video creation, notification and strategies, and includes an adapter for interface compatibility.
+
+
+Briefly, what each pattern is used for in the code:
+Singleton - for managing a channel instance.
+Factory Method - for video creation.
+Observer - for notifications about successful video creation.
+Builder - for building a video with different components.
+Strategy - for selecting the video creation strategy (e.g., editing, animation, etc.).
+Abstract Factory - for creating different video components (text, music, etc.).
