@@ -1,4 +1,4 @@
-//Command
+// Command
 public class AddItemCommand implements ICommand{
     private PaymentCart paymentCart;
     private String item;

@@ -4,45 +4,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //Singleton
+        // Singleton
         PaymentCart paymentCart = PaymentCart.getInstance();
 
-        //Factory Method - creating products
+        // Fabric method
         IProductFactory foodFactory = new FoodFactory();
-        IProduct food = foodFactory.createProduct();
+        IProduct foodProduct = foodFactory.createProduct();
 
-        //Observer - subscribing to event
-        //Creating users
-        EventPublisher eventPublisher = new EventPublisher();
-        IFoodstoreObserver admin1 = new User("Sanzhar");
-        IFoodstoreObserver admin2 = new User("Anuarbek");
-
-        //Adding users to the event notifier
-        eventPublisher.addObserver(admin1);
-        eventPublisher.addObserver(admin2);
-        eventPublisher.notifyObserver(" 10% for all books.");
-
-        //Command - adding and removing
-        ICommand food1 = new AddItemCommand(paymentCart, "Manti ");
-        ICommand food2 = new AddItemCommand(paymentCart, "Samsa ");
-
-
-        //Adding books to the cart
-        food1.execute();
-        food2.execute();
-        //Displaying updated cart content
-        paymentCart.displayItem();
-
-        //Removing food from the cart
-        food2.undo();
-        //Displaying cart content
-        paymentCart.displayItem();
-
-        //Decorator - adding features to the products
-        IProduct discountedFood = new DiscountedProduct(food);
+        // Decorator
+        IProduct discountedFood = new DiscountedProduct(foodProduct);
         discountedFood.displayInfo();
 
-        //Strategy - choosing payment metho
+        // Strategy
         IPaymentStrategy kaspiGold = new KaspiGold();
         IPaymentStrategy kaspiRed = new KaspiRed();
 
@@ -60,5 +33,23 @@ public class Main {
             return;
         }
         paymentMethod.paymentProcess(10);
+
+        // Command
+        PaymentCart cart = PaymentCart.getInstance();
+        cart.addItem("Dish1");
+        cart.addItem("Dish2");
+        cart.displayItem();
+        cart.removeItem("Dish1");
+        cart.displayItem();
+
+        // Observer
+        Admin admin1 = new Admin("Sanzhar");
+        Admin admin2 = new Admin("Anuarbek");
+
+        EventPublisher eventPublisher = new EventPublisher();
+        eventPublisher.addObserver(admin1);
+        eventPublisher.addObserver(admin2);
+
+        eventPublisher.notifyObserver("new order");
     }
 }

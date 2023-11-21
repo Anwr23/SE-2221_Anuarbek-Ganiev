@@ -1,8 +1,8 @@
 //Observer
-public class User implements IFoodstoreObserver {
+public class Admin implements IFoodstoreObserver {
     private String name;
 
-    public User(String name) {
+    public Admin(String name) {
         this.name = name;
     }
 

@@ -1,4 +1,4 @@
-//Decorator
+// Decorator
 public class DiscountedProduct extends ProductDecorator{
     public DiscountedProduct(IProduct decoratedProduct){
         super(decoratedProduct);
@@ -6,6 +6,6 @@ public class DiscountedProduct extends ProductDecorator{
     @Override
     public void displayInfo() {
         decoratedProduct.displayInfo();
-        System.out.println("Now we do not have discounts:(");
+        System.out.println("10% off a dish:)");
     }
 }
