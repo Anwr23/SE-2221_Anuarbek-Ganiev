@@ -28,3 +28,6 @@ Demonstrated using the IFoodstoreObserver interface, EventPublisher class and Us
 
 Command:
 Demonstrated using the IPaymentCommand interface and concrete implementations of AddItemCommand and RemoveItemCommand. This pattern encapsulates requests as objects, allowing client objects to be parameterised with other objects, requests or functions.
+
+
+This project demonstrates simple examples of using various design patterns, including Observer and Command. Understanding and applying these patterns helps to create flexible, easily extensible and maintainable code. When developing real-world applications, it is important to choose appropriate patterns depending on the specific requirements and context of the task.
