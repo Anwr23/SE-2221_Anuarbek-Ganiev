@@ -10,24 +10,48 @@ Ganiev Anuarbek
 Project overview
 Welcome to Online Restourant project. The purpose of this project is to demonstrate the use of various design patterns in object-oriented programming. 
 The project presents a simple example using the following patterns:
+  Factory Method (Factory Method): 
+  Used to create products using a factory. The example is represented by the FoodFactory class implementing the IProductFactory interface.
 
-Factory Method (Factory Method): 
-Used to create products using a factory. The example is represented by the FoodFactory class implementing the IProductFactory interface.
+  Decorator: 
+  Used to dynamically add new functionality to an object. The code provides an example of ProductDecorator, which decorates objects that implement the IProduct interface.
 
-Decorator: 
-Used to dynamically add new functionality to an object. The code provides an example of ProductDecorator, which decorates objects that implement the IProduct interface.
+  Strategy (Strategy): 
+  Demonstrated using the IPaymentStrategy interface and its concrete implementations KaspiGold and KaspiRed. The strategy pattern allows the algorithm to be selected dynamically.
 
-Strategy (Strategy): 
-Demonstrated using the IPaymentStrategy interface and its concrete implementations KaspiGold and KaspiRed. The strategy pattern allows the algorithm to be selected dynamically.
+  Singleton: 
+  Implemented for the PaymentCart class. Ensures that we have only one instance of the class, provides a global access point to that instance.
 
-Singleton: 
-Implemented for the PaymentCart class. Ensures that we have only one instance of the class, provides a global access point to that instance.
+  Observer: 
+  Demonstrated using the IFoodstoreObserver interface, EventPublisher class and User. This pattern allows objects to be notified of and respond to changes in other objects.
 
-Observer: 
-Demonstrated using the IFoodstoreObserver interface, EventPublisher class and User. This pattern allows objects to be notified of and respond to changes in other objects.
+  Command:
+  Demonstrated using the IPaymentCommand interface and concrete implementations of AddItemCommand and RemoveItemCommand. This pattern encapsulates requests as objects, allowing client 
+  objects to be parameterised with other objects, requests or functions.
 
-Command:
-Demonstrated using the IPaymentCommand interface and concrete implementations of AddItemCommand and RemoveItemCommand. This pattern encapsulates requests as objects, allowing client objects to be parameterised with other objects, requests or functions.
+Challenges Faced During the project:
+  Pattern selection: 
+  Determining which specific patterns to use can be a challenge. It was important to identify key aspects of the system that are best modelled using certain patterns.
 
+  Working with interfaces: 
+  In some cases it can be a challenge to use interfaces, especially when implementing a strategy (IPaymentStrategy). Properly defining interfaces and using them can increase the flexibility of the system.
 
-This project demonstrates simple examples of using various design patterns, including Observer and Command. Understanding and applying these patterns helps to create flexible, easily extensible and maintainable code. When developing real-world applications, it is important to choose appropriate patterns depending on the specific requirements and context of the task.
+  Interactions between components: 
+  When you have multiple patterns, it is important to make sure that they interact correctly and that the scenarios for using the system remain intuitive.
+
+Future Improvements For future enhancements, we plan to:
+  Adding new products and decorators: 
+  Expand the range of products and decorators to demonstrate how easy it is to add new functionality and products without changing existing code.
+
+  Using a database: 
+  Implement saving and loading data from a database to manage the state of your shopping basket and product list.
+
+  User Interface Improvement: 
+  Implement a simple user interface to interact with the system to improve understanding of usage scenarios.
+
+  Shopping basket enhancement: 
+  Add functionality for checkout, total cost calculation, tax accounting and other aspects related to the shopping basket.
+
+Conslusion:
+This project demonstrates simple examples of using various design patterns, including Observer and Command. Understanding and applying these patterns helps to create flexible, easily
+extensible and maintainable code. When developing real-world applications, it is important to choose appropriate patterns depending on the specific requirements and context of the task.
