@@ -7,4 +7,24 @@ Author:
 Sairanov Sanzhar
 Ganiev Anuarbek
 
-Online restaurant
+Project overview
+Welcome to Online Restourant project. The purpose of this project is to demonstrate the use of various design patterns in object-oriented programming. 
+The project presents a simple example using the following patterns:
+
+Factory Method (Factory Method): 
+Used to create products using a factory. The example is represented by the FoodFactory class implementing the IProductFactory interface.
+
+Decorator: 
+Used to dynamically add new functionality to an object. The code provides an example of ProductDecorator, which decorates objects that implement the IProduct interface.
+
+Strategy (Strategy): 
+Demonstrated using the IPaymentStrategy interface and its concrete implementations KaspiGold and KaspiRed. The strategy pattern allows the algorithm to be selected dynamically.
+
+Singleton: 
+Implemented for the PaymentCart class. Ensures that we have only one instance of the class, provides a global access point to that instance.
+
+Observer: 
+Demonstrated using the IFoodstoreObserver interface, EventPublisher class and User. This pattern allows objects to be notified of and respond to changes in other objects.
+
+Command:
+Demonstrated using the IPaymentCommand interface and concrete implementations of AddItemCommand and RemoveItemCommand. This pattern encapsulates requests as objects, allowing client objects to be parameterised with other objects, requests or functions.
