@@ -10,6 +10,7 @@ Ganiev Anuarbek
 Project overview
 Welcome to Online Restourant project. The purpose of this project is to demonstrate the use of various design patterns in object-oriented programming. 
 The project presents a simple example using the following patterns:
+
   Factory Method (Factory Method): 
   Used to create products using a factory. The example is represented by the FoodFactory class implementing the IProductFactory interface.
 
@@ -55,3 +56,7 @@ Future Improvements For future enhancements, we plan to:
 Conslusion:
 This project demonstrates simple examples of using various design patterns, including Observer and Command. Understanding and applying these patterns helps to create flexible, easily
 extensible and maintainable code. When developing real-world applications, it is important to choose appropriate patterns depending on the specific requirements and context of the task.
+
+Online Restourant Project UML diagram: https://drive.google.com/file/d/12WVNnU3HFC-EVt4yiOy5w-iNR4J8FbKK/view?usp=sharing 
+
+During the implementation of this project we used various Internet resources, textbooks and documentation on Java programming, design patterns such as: Refactoring.guru, Sourcemaking.com, "Java Design Patterns" by Vaskaran Sarcar, digitalocean.com.
